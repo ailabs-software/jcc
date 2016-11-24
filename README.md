@@ -9,3 +9,5 @@ ROADMAP:
 1. Get minimum compiler working
 2. Figure out which classes are really needed, and eliminate everything else so gwt becomes subgwt
 
+leanjava
+
