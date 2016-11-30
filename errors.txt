@@ -1,0 +1,369 @@
+javac -classpath .:lib/guava-gwt-19.0.jar:lib/guava-19.0.jar:lib/eclipse-compiler.jar:lib/asm-all-5.0.3.jar:lib/colt-1.2.0.jar:lib/jsr305-1.3.9.jar:lib/ecj-4.6.jar:lib/ant-1.5.4.jar:lib/jre_emul-0.5.9.jar:lib/jdtcore-3.0.1.jar com/google/gwt/core/ext/soyc/coderef/ClassDescriptor.java
+./com/google/gwt/dev/jjs/impl/JjsUtils.java:65: error: package com.google.gwt.lang does not exist
+import com.google.gwt.lang.LongLib;
+                          ^
+./com/google/gwt/dev/javac/JdtCompiler.java:148: error: incompatible types: IProblem[] cannot be converted to CategorizedProblem[]
+          .setProblems(cud.compilationResult().getProblems());
+                                                          ^
+./com/google/gwt/dev/javac/JdtCompiler.java:240: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/javac/JdtCompiler.java:314: error: incompatible types: CompilerOptions cannot be converted to Map
+          compilerOptions, new ICompilerRequestorImpl(), new DefaultProblemFactory(
+          ^
+./com/google/gwt/dev/javac/JdtCompiler.java:603: error: incompatible types: InputStream cannot be converted to ZipFile
+              ClassFileReader.read(openStream, resource.toExternalForm(), true);
+                                   ^
+./com/google/gwt/dev/javac/JdtCompiler.java:704: error: long cannot be dereferenced
+        warningThreshold.clearAll();
+                        ^
+./com/google/gwt/dev/javac/JdtCompiler.java:709: error: cannot find symbol
+    options.originalSourceLevel = jdtSourceLevel;
+           ^
+  symbol:   variable originalSourceLevel
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JdtCompiler.java:715: error: cannot find symbol
+    options.storeAnnotations = true;
+           ^
+  symbol:   variable storeAnnotations
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JdtCompiler.java:719: error: cannot find symbol
+        ClassFileConstants.ATTR_VARS | ClassFileConstants.ATTR_LINES
+                          ^
+  symbol:   variable ATTR_VARS
+  location: interface ClassFileConstants
+./com/google/gwt/dev/javac/JdtCompiler.java:719: error: cannot find symbol
+        ClassFileConstants.ATTR_VARS | ClassFileConstants.ATTR_LINES
+                                                         ^
+  symbol:   variable ATTR_LINES
+  location: interface ClassFileConstants
+./com/google/gwt/dev/javac/JdtCompiler.java:720: error: cannot find symbol
+            | ClassFileConstants.ATTR_SOURCE;
+                                ^
+  symbol:   variable ATTR_SOURCE
+  location: interface ClassFileConstants
+./com/google/gwt/dev/javac/JdtCompiler.java:727: error: cannot find symbol
+    options.reportUnusedDeclaredThrownExceptionIncludeDocCommentReference = false;
+           ^
+  symbol:   variable reportUnusedDeclaredThrownExceptionIncludeDocCommentReference
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JdtCompiler.java:728: error: cannot find symbol
+    options.reportUnusedDeclaredThrownExceptionExemptExceptionAndThrowable = false;
+           ^
+  symbol:   variable reportUnusedDeclaredThrownExceptionExemptExceptionAndThrowable
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JdtCompiler.java:737: error: cannot find symbol
+    options.originalSourceLevel = jdtSourceLevel;
+           ^
+  symbol:   variable originalSourceLevel
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JdtCompiler.java:868: error: cannot find symbol
+          SourceLevel.JAVA8, ClassFileConstants.JDK1_8);
+                                               ^
+  symbol:   variable JDK1_8
+  location: interface ClassFileConstants
+./com/google/gwt/dev/jdt/TypeRefVisitor.java:195: error: cannot find symbol
+      maybeDispatch(expression, ptBinding.genericType());
+                                         ^
+  symbol:   method genericType()
+  location: variable ptBinding of type ParameterizedTypeBinding
+./com/google/gwt/dev/jdt/TypeRefVisitor.java:199: error: cannot find symbol
+      maybeDispatch(expression, rawTypeBinding.genericType());
+                                              ^
+  symbol:   method genericType()
+  location: variable rawTypeBinding of type RawTypeBinding
+./com/google/gwt/dev/javac/JdtCompiler.java:898: error: method does not override or implement a method from a supertype
+      @Override
+      ^
+./com/google/gwt/dev/javac/JsniMethodCollector.java:18: error: package com.google.gwt.core.client does not exist
+import com.google.gwt.core.client.GwtScriptOnly;
+                                 ^
+./com/google/gwt/dev/javac/JsniReferenceResolver.java:18: error: package com.google.gwt.core.client does not exist
+import com.google.gwt.core.client.UnsafeNativeLong;
+                                 ^
+./com/google/gwt/dev/javac/CompilationStateBuilder.java:176: error: incompatible types: IProblem[] cannot be converted to CategorizedProblem[]
+              .setProblems(cud.compilationResult().getProblems());
+                                                              ^
+./com/google/gwt/dev/javac/JSORestrictionsChecker.java:218: error: cannot find symbol
+      if (!type.binding.isFunctionalInterface(type.scope)) {
+                       ^
+  symbol:   method isFunctionalInterface(ClassScope)
+  location: variable binding of type SourceTypeBinding
+./com/google/gwt/dev/javac/JavaSourceParser.java:181: error: constructor CodeSnippetParsingUtil in class CodeSnippetParsingUtil cannot be applied to given types;
+    CodeSnippetParsingUtil parsingUtil = new CodeSnippetParsingUtil(true);
+                                         ^
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+./com/google/gwt/dev/javac/JavaSourceParser.java:183: error: cannot find symbol
+    options.complianceLevel = ClassFileConstants.JDK1_8;
+                                                ^
+  symbol:   variable JDK1_8
+  location: interface ClassFileConstants
+./com/google/gwt/dev/javac/JavaSourceParser.java:184: error: cannot find symbol
+    options.originalSourceLevel = ClassFileConstants.JDK1_8;
+           ^
+  symbol:   variable originalSourceLevel
+  location: variable options of type CompilerOptions
+./com/google/gwt/dev/javac/JavaSourceParser.java:184: error: cannot find symbol
+    options.originalSourceLevel = ClassFileConstants.JDK1_8;
+                                                    ^
+  symbol:   variable JDK1_8
+  location: interface ClassFileConstants
+./com/google/gwt/dev/javac/JavaSourceParser.java:185: error: cannot find symbol
+    options.sourceLevel = ClassFileConstants.JDK1_8;
+                                            ^
+  symbol:   variable JDK1_8
+  location: interface ClassFileConstants
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1088: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1114: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1186: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1208: error: cannot find symbol
+      MethodBinding samBinding = binding.getSingleAbstractMethod(blockScope, false);
+                                        ^
+  symbol:   method getSingleAbstractMethod(BlockScope,boolean)
+  location: variable binding of type TypeBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1738: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1763: error: cannot find symbol
+      MethodBinding samBinding = binding.getSingleAbstractMethod(blockScope, false).original();
+                                        ^
+  symbol:   method getSingleAbstractMethod(BlockScope,boolean)
+  location: variable binding of type TypeBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1781: error: cannot find symbol
+          if (synthRefMethodBinding.fakePaddedParameters != 0
+                                   ^
+  symbol:   variable fakePaddedParameters
+  location: variable synthRefMethodBinding of type SyntheticMethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1978: error: incomparable types: TypeBinding and char[]
+      if (fromType == TypeBinding.VOID || toType == TypeBinding.VOID) {
+                   ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:1978: error: incomparable types: TypeBinding and char[]
+      if (fromType == TypeBinding.VOID || toType == TypeBinding.VOID) {
+                                                 ^
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2126: error: cannot find symbol
+        if (x.resources.length > 0) {
+             ^
+  symbol:   variable resources
+  location: variable x of type TryStatement
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2188: error: cannot find symbol
+      for (int i = x.resources.length - 1; i >= 0; i--) {
+                    ^
+  symbol:   variable resources
+  location: variable x of type TryStatement
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2191: error: cannot find symbol
+        JDeclarationStatement resourceDecl = pop(x.resources[i]);
+                                                  ^
+  symbol:   variable resources
+  location: variable x of type TryStatement
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2193: error: cannot find symbol
+        JLocal resourceVar = (JLocal) curMethod.locals.get(x.resources[i].binding);
+                                                            ^
+  symbol:   variable resources
+  location: variable x of type TryStatement
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2221: error: cannot find symbol
+      for (int i = x.resources.length - 1; i >= 0; i--) {
+                    ^
+  symbol:   variable resources
+  location: variable x of type TryStatement
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:2736: error: cannot find symbol
+          if (syntheticMethodBinding.purpose == SyntheticMethodBinding.BridgeMethod
+                                    ^
+  symbol:   variable purpose
+  location: variable syntheticMethodBinding of type SyntheticMethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3370: error: cannot find symbol
+        if ((statement.bits & ASTNode.IsReachable) != 0) {
+                                     ^
+  symbol:   variable IsReachable
+  location: class ASTNode
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3380: error: cannot find symbol
+        if ((statement.bits & ASTNode.IsReachable) != 0) {
+                                     ^
+  symbol:   variable IsReachable
+  location: class ASTNode
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3398: error: cannot find symbol
+        if ((x.bits & ASTNode.DepthMASK) != 0 || nearestMethodScope.isLambdaScope()) {
+                                                                   ^
+  symbol:   method isLambdaScope()
+  location: variable nearestMethodScope of type MethodScope
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3599: error: cannot find symbol
+      MethodBinding abstractMethod = referenceBinding.getSingleAbstractMethod(scope, false);
+                                                     ^
+  symbol:   method getSingleAbstractMethod(Scope,boolean)
+  location: variable referenceBinding of type ReferenceBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3642: error: cannot find symbol
+        if (method == null || method.isStatic() || method.redeclaresPublicObjectMethod(scope)) {
+                                                         ^
+  symbol:   method redeclaresPublicObjectMethod(Scope)
+  location: variable method of type MethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3647: error: method doesMethodOverride in class MethodVerifier cannot be applied to given types;
+          if (MethodVerifier.doesMethodOverride(method, abstractMethodFromSupers,
+                            ^
+  required: MethodBinding,MethodBinding
+  found: MethodBinding,MethodBinding,LookupEnvironment
+  reason: actual and formal argument lists differ in length
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3653: error: cannot find symbol
+        if (!method.isDefaultMethod()) {
+                   ^
+  symbol:   method isDefaultMethod()
+  location: variable method of type MethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3696: error: cannot find symbol
+      separatorPositions = cud.compilationResult().getLineSeparatorPositions();
+                                                  ^
+  symbol:   method getLineSeparatorPositions()
+  location: class CompilationResult
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3923: error: cannot find symbol
+        Util.getLineNumber(x.sourceStart, curCud.separatorPositions, 0,
+            ^
+  symbol:   method getLineNumber(int,int[],int,int)
+  location: class Util
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:3930: error: cannot find symbol
+        Util.getLineNumber(x.sourceStart, curCud.separatorPositions, 0,
+            ^
+  symbol:   method getLineNumber(int,int[],int,int)
+  location: class Util
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:4138: error: cannot find symbol
+    if (b.isDefaultMethod()) {
+         ^
+  symbol:   method isDefaultMethod()
+  location: variable b of type MethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:4166: error: cannot find symbol
+    if (messageSend.binding.genericMethod() != null) {
+                           ^
+  symbol:   method genericMethod()
+  location: variable binding of type MethodBinding
+./com/google/gwt/dev/jjs/impl/GwtAstBuilder.java:4167: error: cannot find symbol
+      return JdtUtil.getAnnotationByName(messageSend.binding().getAnnotations(),
+                                                    ^
+  symbol:   method binding()
+  location: variable messageSend of type MessageSend
+./com/google/gwt/dev/jjs/impl/JjsUtils.java:489: error: cannot find symbol
+        long[] values = LongLib.getAsLongArray(((JLongLiteral) literal).getValue());
+                        ^
+  symbol: variable LongLib
+./com/google/gwt/dev/javac/JdtUtil.java:233: error: cannot find symbol
+      AnnotationBinding annotationBinding = annotation.getCompilerAnnotation();
+                                                      ^
+  symbol:   method getCompilerAnnotation()
+  location: variable annotation of type Annotation
+./com/google/gwt/dev/javac/JdtUtil.java:443: error: cannot find symbol
+        return methodBinding.isDefaultMethod();
+                            ^
+  symbol:   method isDefaultMethod()
+  location: variable methodBinding of type MethodBinding
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:50: error: cannot find symbol
+      String typeName = new String(ann.type.getLastToken());
+                                           ^
+  symbol:   method getLastToken()
+  location: variable type of type TypeReference
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:149: error: method kind in class TypeDeclaration cannot be applied to given types;
+    if (TypeDeclaration.kind(tyDecl.modifiers) == TypeDeclaration.ANNOTATION_TYPE_DECL) {
+                       ^
+  required: no arguments
+  found: int
+  reason: actual and formal argument lists differ in length
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:149: error: cannot find symbol
+    if (TypeDeclaration.kind(tyDecl.modifiers) == TypeDeclaration.ANNOTATION_TYPE_DECL) {
+                                                                 ^
+  symbol:   variable ANNOTATION_TYPE_DECL
+  location: class TypeDeclaration
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:159: error: method kind in class TypeDeclaration cannot be applied to given types;
+    if (TypeDeclaration.kind(tyDecl.modifiers) == TypeDeclaration.CLASS_DECL) {
+                       ^
+  required: no arguments
+  found: int
+  reason: actual and formal argument lists differ in length
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:159: error: cannot find symbol
+    if (TypeDeclaration.kind(tyDecl.modifiers) == TypeDeclaration.CLASS_DECL) {
+                                                                 ^
+  symbol:   variable CLASS_DECL
+  location: class TypeDeclaration
+./com/google/gwt/dev/javac/GwtIncompatiblePreprocessor.java:166: error: cannot find symbol
+      constructor.bits &= ~ASTNode.IsDefaultConstructor;
+                                  ^
+  symbol:   variable IsDefaultConstructor
+  location: class ASTNode
+./com/google/gwt/dev/javac/UnusedImportsRemover.java:63: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/javac/UnusedImportsRemover.java:160: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+./com/google/gwt/dev/javac/UnusedImportsRemover.java:216: error: cannot find symbol
+          importRef.trailingStarPosition > 0  ||
+                   ^
+  symbol:   variable trailingStarPosition
+  location: variable importRef of type ImportReference
+./com/google/gwt/dev/javac/JsniMethodCollector.java:120: error: cannot find symbol
+        if (name.equals(GwtScriptOnly.class.getName())) {
+                        ^
+  symbol:   class GwtScriptOnly
+  location: class Visitor
+./com/google/gwt/dev/javac/JsniMethodCollector.java:179: error: cannot find symbol
+    int startLine = Util.getLineNumber(method.sourceStart, indexes, 0,
+                        ^
+  symbol:   method getLineNumber(int,int[],int,int)
+  location: class Util
+./com/google/gwt/dev/javac/JsniMethodCollector.java:340: error: cannot find symbol
+        .getLineSeparatorPositions(), info.getStartLine(), info.getStartPos());
+        ^
+  symbol:   method getLineSeparatorPositions()
+  location: variable compResult of type CompilationResult
+./com/google/gwt/dev/javac/JsniReferenceResolver.java:310: error: cannot find symbol
+        if (!importReference.isStatic()  && importReference.trailingStarPosition == 0 &&
+                                                           ^
+  symbol:   variable trailingStarPosition
+  location: variable importReference of type ImportReference
+./com/google/gwt/dev/javac/JsniReferenceResolver.java:335: error: cannot find symbol
+        if (importReference.isStatic() || importReference.trailingStarPosition == 0) {
+                                                         ^
+  symbol:   variable trailingStarPosition
+  location: variable importReference of type ImportReference
+./com/google/gwt/dev/javac/JsniReferenceResolver.java:743: error: cannot find symbol
+      '.', UnsafeNativeLong.class.getName().toCharArray());
+           ^
+  symbol:   class UnsafeNativeLong
+  location: class JsniReferenceResolver
+./com/google/gwt/dev/javac/GWTProblem.java:43: error: cannot find symbol
+    int[] lineEnds = compResult.getLineSeparatorPositions();
+                               ^
+  symbol:   method getLineSeparatorPositions()
+  location: variable compResult of type CompilationResult
+./com/google/gwt/dev/javac/GWTProblem.java:45: error: cannot find symbol
+        Util.getLineNumber(node.sourceStart(), lineEnds, 0, lineEnds.length - 1);
+            ^
+  symbol:   method getLineNumber(int,int[],int,int)
+  location: class Util
+./com/google/gwt/dev/javac/GWTProblem.java:47: error: cannot find symbol
+        Util.searchColumnNumber(lineEnds, startLine, node.sourceStart());
+            ^
+  symbol:   method searchColumnNumber(int[],int,int)
+  location: class Util
+./com/google/gwt/dev/javac/GWTProblem.java:76: error: cannot find symbol
+        IProblem.ExternalProblemNotFixable, null, problemSeverity,
+                ^
+  symbol:   variable ExternalProblemNotFixable
+  location: interface IProblem
+lib/guava-gwt-19.0.jar(com/google/common/collect/AbstractIterator.java):64: error: duplicate class: com.google.common.collect.AbstractIterator
+public abstract class AbstractIterator<T> extends UnmodifiableIterator<T> {
+                ^
+lib/guava-gwt-19.0.jar(com/google/common/base/Optional.java):300: error: cannot access AbstractIterator
+        return new AbstractIterator<T>() {
+                   ^
+  bad source file: lib/guava-gwt-19.0.jar(com/google/common/base/AbstractIterator.java)
+    file does not contain class com.google.common.base.AbstractIterator
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+79 errors
+make: *** [com/google/gwt/core/ext/soyc/coderef/ClassDescriptor.class] Error 1
