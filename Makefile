@@ -104,6 +104,7 @@ endif
 
 # Packages we should compile
 PACKAGES = \
+        com.google.gwt.json.client \
 	com.google.gwt.core.ext.soyc.coderef \
 	com.google.gwt.dev.shell.jetty \
 	com.google.gwt.dev.shell.log \
@@ -165,7 +166,6 @@ PACKAGES = \
 	com.google.gwt.dev.util.arg \
 	com.google.gwt.dev.jjs.impl.gflow.constants \
 	com.google.gwt.util.tools.shared
-
 
 # All packages that can be recursively compiled.
 ALL_PACKAGES = \
@@ -468,6 +468,7 @@ com.ailabs : $(call PACKAGE_OBJS,com.ailabs)
 com.google.gwt.core : $(call PACKAGE_OBJS,com.google.gwt.core)
 com : $(call PACKAGE_OBJS,com)
 com.google.gwt : $(call PACKAGE_OBJS,com.google.gwt)
+com.google.gwt.json.client : $(call PACKAGE_OBJS,com.google.gwt.json.client)
 com.google.gwt.core.ext.soyc.coderef : $(call PACKAGE_OBJS,com.google.gwt.core.ext.soyc.coderef)
 com.google.gwt.dev.shell.jetty : $(call PACKAGE_OBJS,com.google.gwt.dev.shell.jetty)
 com.google.gwt.dev.shell.log : $(call PACKAGE_OBJS,com.google.gwt.dev.shell.log)
