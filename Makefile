@@ -104,6 +104,7 @@ endif
 
 # Packages we should compile
 PACKAGES = \
+        com.google.gwt.core.shared \
         com.google.gwt.json.client \
 	com.google.gwt.core.ext.soyc.coderef \
 	com.google.gwt.dev.shell.jetty \
@@ -468,6 +469,7 @@ com.ailabs : $(call PACKAGE_OBJS,com.ailabs)
 com.google.gwt.core : $(call PACKAGE_OBJS,com.google.gwt.core)
 com : $(call PACKAGE_OBJS,com)
 com.google.gwt : $(call PACKAGE_OBJS,com.google.gwt)
+com.google.gwt.core.shared : $(call PACKAGE_OBJS,com.google.gwt.core.shared)
 com.google.gwt.json.client : $(call PACKAGE_OBJS,com.google.gwt.json.client)
 com.google.gwt.core.ext.soyc.coderef : $(call PACKAGE_OBJS,com.google.gwt.core.ext.soyc.coderef)
 com.google.gwt.dev.shell.jetty : $(call PACKAGE_OBJS,com.google.gwt.dev.shell.jetty)
