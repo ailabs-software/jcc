@@ -1,29 +1,31 @@
 /*
- * Copyright 2013 Google Inc.
- *
+ * Copyright 2010 Google Inc.
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- *
+ * 
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package java.io;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * A character encoding is not supported - <a
+ * href="http://java.sun.com/javase/6/docs/api/java/io/UnsupportedEncodingException.html">[Sun's
+ * docs]</a>.
  */
-public class ThrowableTypeResolver {
+public class UnsupportedEncodingException extends IOException {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
+  public UnsupportedEncodingException() {
+  }
+  
+  public UnsupportedEncodingException(String msg) {
+    super(msg);
   }
 }

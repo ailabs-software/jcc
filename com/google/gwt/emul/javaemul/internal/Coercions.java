@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2014 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,22 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package javaemul.internal;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * Private implementation class for GWT. This API should not be
+ * considered public or stable.
  */
-public class ThrowableTypeResolver {
+public final class Coercions {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
+  /**
+   * Coerce js int to 32 bits.
+   * Trick related to JS and lack of integer rollover.
+   * {@see com.google.gwt.lang.Cast#narrow_int}
+   */
+  public static int ensureInt(int value) {
+    return value | 0;
   }
+
+  private Coercions() { }
 }

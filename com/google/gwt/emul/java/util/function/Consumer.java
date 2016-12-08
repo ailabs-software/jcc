@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2015 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,26 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
+package java.util.function;
 
-import com.google.gwt.core.shared.SerializableThrowable;
+import static javaemul.internal.InternalPreconditions.checkCriticalNotNull;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * See <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html">
+ * the official Java API doc</a> for details.
+ *
+ * @param <T> type of the argument
  */
-public class ThrowableTypeResolver {
+@FunctionalInterface
+public interface Consumer<T> {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
+  void accept(T t);
+
+  default Consumer<T> andThen(Consumer<? super T> after) {
+    checkCriticalNotNull(after);
+    return t -> {
+      accept(t);
+      after.accept(t);
+    };
   }
 }

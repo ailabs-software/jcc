@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2016 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package java.lang;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * See <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/SecurityException.html">the
+ * official Java API doc</a> for details.
+ * 
+ * This exception is never thrown by GWT or GWT's libraries, as GWT does not have a SecurityManager.
+ * It is provided in GWT only for compatibility with user code that explicitly catches it.
  */
-public class ThrowableTypeResolver {
-
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
+public class SecurityException extends RuntimeException {
+  private SecurityException() {
   }
 }

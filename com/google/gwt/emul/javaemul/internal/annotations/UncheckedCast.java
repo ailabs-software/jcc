@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2016 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,16 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
+package javaemul.internal.annotations;
 
-import com.google.gwt.core.shared.SerializableThrowable;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * An annotation to mark a method as unchecked to prevent the compiler from inserting casts on
+ * returns call sites due to erasure.
  */
-public class ThrowableTypeResolver {
-
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+@Target(ElementType.METHOD)
+@CompilerHint
+public @interface UncheckedCast {
 }

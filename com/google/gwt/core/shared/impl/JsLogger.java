@@ -15,15 +15,12 @@
  */
 package com.google.gwt.core.shared.impl;
 
-import com.google.gwt.core.shared.SerializableThrowable;
-
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * A JsLogger is an implementation of GWT.log() to use in GWT apps compiled to JavaScript.
+ * The default implementation does nothing. It is replaced in Super Dev Mode; see
+ * the superdevmode variable in Core.gwt.xml.
  */
-public class ThrowableTypeResolver {
-
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
+public class JsLogger {
+  public void log(String message, Throwable e) {
   }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2015 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package javaemul.internal;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * A utility to provide array stamping. Provided as a separate class to simplify super-source.
  */
-public class ThrowableTypeResolver {
-
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+class ArrayStamper {
+  public static native <T> T[] stampJavaTypeInfo(Object array, T[] referenceType) /*-{
+    return @com.google.gwt.lang.Array::stampJavaTypeInfo(
+        Ljava/lang/Object;[Ljava/lang/Object;)(array, referenceType);
+  }-*/;
 }

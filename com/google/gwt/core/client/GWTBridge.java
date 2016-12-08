@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2008 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,14 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package com.google.gwt.core.client;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * When running in Development Mode, acts as a bridge from {@link GWT} into the
+ * Development Mode environment.
+ *
+ * For code that may run anywhere besides the client, use
+ * {@link com.google.gwt.core.shared.GWTBridge} instead.
  */
-public class ThrowableTypeResolver {
-
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+public abstract class GWTBridge extends com.google.gwt.core.shared.GWTBridge {
 }

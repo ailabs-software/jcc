@@ -13,17 +13,17 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package java.lang;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * See <a
+ * href="http://docs.oracle.com/javase/7/docs/api/java/lang/AutoCloseable.html">the
+ * official Java API doc</a> for details.
  */
-public class ThrowableTypeResolver {
+public interface AutoCloseable {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+  /**
+   * Closes this resource.
+   */
+  void close() throws Exception;
 }

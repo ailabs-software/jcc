@@ -13,17 +13,15 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
-
-import com.google.gwt.core.shared.SerializableThrowable;
+package java.lang.reflect;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * This interface makes {@link java.lang.reflect.Type} available to GWT clients.
+ *
+ * @see java.lang.reflect.Type
  */
-public class ThrowableTypeResolver {
+public interface Type {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+  // just a marker interface.
+
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Google Inc.
+ * Copyright 2007 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -13,17 +13,32 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
-package com.google.gwt.core.shared.impl;
 
-import com.google.gwt.core.shared.SerializableThrowable;
+package java.util;
 
 /**
- * Helper to resolve the designated type for {@link SerializableThrowable}. This class has
- * translated version to improve type information when class metadata is not available.
+ * Uses Java 1.5 ListIterator for documentation. The methods hasNext, next, and
+ * remove are repeated to allow the specialized ListIterator documentation to be
+ * associated with them. <a
+ * href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/ListIterator.html">[Sun
+ * docs]</a>
+ *
+ * @param <E> element type.
  */
-public class ThrowableTypeResolver {
+public interface ListIterator<E> extends Iterator<E> {
 
-  public static void resolveDesignatedType(SerializableThrowable throwable, Throwable designated) {
-    throwable.setDesignatedType(designated.getClass().getName(), true);
-  }
+  void add(E o);
+
+  boolean hasPrevious();
+
+  int nextIndex();
+
+  E previous();
+
+  int previousIndex();
+
+  @Override
+  void remove();
+
+  void set(E o);
 }
