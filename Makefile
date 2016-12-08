@@ -30,7 +30,7 @@ JAVADOC         = javadoc
 JAR             = jar
 
 # Build flags
-JAVAC_FLAGS     = -classpath .:lib/guava-gwt-19.0.jar:lib/guava-19.0.jar:lib/eclipse-compiler.jar:lib/asm-all-5.0.3.jar:lib/colt-1.2.0.jar:lib/jsr305-1.3.9.jar:lib/ecj-4.6.jar:lib/ant-1.5.4.jar:lib/jre_emul-0.5.9.jar:lib/jdtcore-3.0.1.jar
+JAVAC_FLAGS     = -classpath .:lib/guava-gwt-19.0.jar:lib/guava-19.0.jar:lib/eclipse-compiler.jar:lib/asm-all-5.0.3.jar:lib/colt-1.2.0.jar:lib/jsr305-1.3.9.jar:lib/ecj-4.6.jar:lib/ant-1.5.4.jar:lib/jre_emul-0.5.9.jar:lib/jdtcore-3.0.1.jar:lib/org.json.jar
 JAVADOC_FLAGS   = -version -author
 JAR_FLAGS       = cvf0
 JIKES_DEP_FLAG	= +M

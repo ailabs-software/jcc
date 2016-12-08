@@ -35,9 +35,9 @@ import com.google.gwt.dev.js.ast.JsName;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import com.google.gwt.json.client.JSONArray;
-import com.google.gwt.json.client.JSONException;
-import com.google.gwt.json.client.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import com.google.gwt.util.tools.Utility;
 
 import java.io.ByteArrayOutputStream;
